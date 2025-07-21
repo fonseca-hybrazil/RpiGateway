@@ -22,6 +22,7 @@
           "System.ServiceModel.Http": "4.10.3",
           "System.ServiceModel.NetTcp": "4.10.3",
           "System.ServiceModel.Security": "4.10.3",
+          "Tmds.Systemd": "0.8.0",
           "runtimepack.Microsoft.NETCore.App.Runtime.linux-arm64": "6.0.25"
         },
         "runtime": {
@@ -1240,7 +1241,6 @@
           "System.Runtime": "4.3.0"
         }
       },
-      "runtime.any.System.Diagnostics.Tracing/4.3.0": {},
       "runtime.any.System.Globalization/4.3.0": {},
       "runtime.any.System.IO/4.3.0": {},
       "runtime.any.System.Reflection/4.3.0": {},
@@ -1293,7 +1293,7 @@
       },
       "runtime.unix.System.IO.FileSystem/4.3.0": {
         "dependencies": {
-          "System.Buffers": "4.3.0",
+          "System.Buffers": "4.5.0",
           "System.Collections": "4.3.0",
           "System.Diagnostics.Debug": "4.3.0",
           "System.IO": "4.3.0",
@@ -1322,15 +1322,7 @@
           "runtime.native.System.Security.Cryptography.OpenSsl": "4.3.0"
         }
       },
-      "System.Buffers/4.3.0": {
-        "dependencies": {
-          "System.Diagnostics.Debug": "4.3.0",
-          "System.Diagnostics.Tracing": "4.3.0",
-          "System.Resources.ResourceManager": "4.3.0",
-          "System.Runtime": "4.3.0",
-          "System.Threading": "4.3.0"
-        }
-      },
+      "System.Buffers/4.5.0": {},
       "System.Collections/4.3.0": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "1.1.0",
@@ -1370,14 +1362,6 @@
             "assemblyVersion": "6.0.0.0",
             "fileVersion": "6.0.21.52210"
           }
-        }
-      },
-      "System.Diagnostics.Tracing/4.3.0": {
-        "dependencies": {
-          "Microsoft.NETCore.Platforms": "1.1.0",
-          "Microsoft.NETCore.Targets": "1.1.0",
-          "System.Runtime": "4.3.0",
-          "runtime.any.System.Diagnostics.Tracing": "4.3.0"
         }
       },
       "System.Drawing.Common/7.0.0": {
@@ -1428,6 +1412,7 @@
           "System.Runtime": "4.3.0"
         }
       },
+      "System.Memory/4.5.0": {},
       "System.Numerics.Vectors/4.5.0": {},
       "System.Private.ServiceModel/4.10.3": {
         "dependencies": {
@@ -1822,6 +1807,19 @@
           "System.Threading": "4.3.0",
           "System.Xml.ReaderWriter": "4.3.0"
         }
+      },
+      "Tmds.Systemd/0.8.0": {
+        "dependencies": {
+          "System.Buffers": "4.5.0",
+          "System.Memory": "4.5.0",
+          "System.Runtime.CompilerServices.Unsafe": "6.0.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Tmds.Systemd.dll": {
+            "assemblyVersion": "0.8.0.0",
+            "fileVersion": "0.8.0.0"
+          }
+        }
       }
     }
   },
@@ -2151,13 +2149,6 @@
       "path": "runtime.any.system.collections/4.3.0",
       "hashPath": "runtime.any.system.collections.4.3.0.nupkg.sha512"
     },
-    "runtime.any.System.Diagnostics.Tracing/4.3.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-1lpifymjGDzoYIaam6/Hyqf8GhBI3xXYLK2TgEvTtuZMorG3Kb9QnMTIKhLjJYXIiu1JvxjngHvtVFQQlpQ3HQ==",
-      "path": "runtime.any.system.diagnostics.tracing/4.3.0",
-      "hashPath": "runtime.any.system.diagnostics.tracing.4.3.0.nupkg.sha512"
-    },
     "runtime.any.System.Globalization/4.3.0": {
       "type": "package",
       "serviceable": true,
@@ -2347,12 +2338,12 @@
       "path": "runtime.unix.system.runtime.extensions/4.3.0",
       "hashPath": "runtime.unix.system.runtime.extensions.4.3.0.nupkg.sha512"
     },
-    "System.Buffers/4.3.0": {
+    "System.Buffers/4.5.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-ratu44uTIHgeBeI0dE8DWvmXVBSo4u7ozRZZHOMmK/JPpYyo0dAfgSiHlpiObMQ5lEtEyIXA40sKRYg5J6A8uQ==",
-      "path": "system.buffers/4.3.0",
-      "hashPath": "system.buffers.4.3.0.nupkg.sha512"
+      "sha512": "sha512-pL2ChpaRRWI/p4LXyy4RgeWlYF2sgfj/pnVMvBqwNFr5cXg7CXNnWZWxrOONLg8VGdFB8oB+EG2Qw4MLgTOe+A==",
+      "path": "system.buffers/4.5.0",
+      "hashPath": "system.buffers.4.5.0.nupkg.sha512"
     },
     "System.Collections/4.3.0": {
       "type": "package",
@@ -2388,13 +2379,6 @@
       "sha512": "sha512-lcyUiXTsETK2ALsZrX+nWuHSIQeazhqPphLfaRxzdGaG93+0kELqpgEHtwWOlQe7+jSFnKwaCAgL4kjeZCQJnw==",
       "path": "system.diagnostics.eventlog/6.0.0",
       "hashPath": "system.diagnostics.eventlog.6.0.0.nupkg.sha512"
-    },
-    "System.Diagnostics.Tracing/4.3.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-rswfv0f/Cqkh78rA5S8eN8Neocz234+emGCtTF3lxPY96F+mmmUen6tbn0glN6PMvlKQb9bPAY5e9u7fgPTkKw==",
-      "path": "system.diagnostics.tracing/4.3.0",
-      "hashPath": "system.diagnostics.tracing.4.3.0.nupkg.sha512"
     },
     "System.Drawing.Common/7.0.0": {
       "type": "package",
@@ -2437,6 +2421,13 @@
       "sha512": "sha512-6QOb2XFLch7bEc4lIcJH49nJN2HV+OC3fHDgsLVsBVBk3Y4hFAnOBGzJ2lUu7CyDDFo9IBWkSsnbkT6IBwwiMw==",
       "path": "system.io.filesystem.primitives/4.3.0",
       "hashPath": "system.io.filesystem.primitives.4.3.0.nupkg.sha512"
+    },
+    "System.Memory/4.5.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-m0psCSpUxTGfvwyO0i03ajXVhgBqyXlibXz0Mo1dtKGjaHrXFLnuQ8rNBTmWRqbfRjr4eC6Wah4X5FfuFDu5og==",
+      "path": "system.memory/4.5.0",
+      "hashPath": "system.memory.4.5.0.nupkg.sha512"
     },
     "System.Numerics.Vectors/4.5.0": {
       "type": "package",
@@ -2696,6 +2687,13 @@
       "sha512": "sha512-lJ8AxvkX7GQxpC6GFCeBj8ThYVyQczx2+f/cWHJU8tjS7YfI6Cv6bon70jVEgs2CiFbmmM8b9j1oZVx0dSI2Ww==",
       "path": "system.xml.xmldocument/4.3.0",
       "hashPath": "system.xml.xmldocument.4.3.0.nupkg.sha512"
+    },
+    "Tmds.Systemd/0.8.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-VKVOTdBZHwtW1YThYSXtebtY4McNjarz6ztTk7BdkpnfKYtat2aeglKCR3+cdp33B6nko8br8f19zvj2Wrkibg==",
+      "path": "tmds.systemd/0.8.0",
+      "hashPath": "tmds.systemd.0.8.0.nupkg.sha512"
     }
   },
   "runtimes": {
